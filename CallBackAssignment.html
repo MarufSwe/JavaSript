@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<title> CallBack Function Assignment</title> 
+</head> 
+
+<body> 
+	<h1 style="color: purple"> 
+	Hey... This is CallBack Function!!!
+</h1> 
+	<h3><b><p>If you wanna se the output then plz open the consol :)</p></b> 
+	
+
+	<script type="text/javascript"> 
+
+		function higherOrderFunction(firstMessage, callback) { 
+			console.log("Running higherOrderFunction first with message: "+ firstMessage); 
+			if (typeof callback == "function"){
+	 			callback("Maruf", "Bangladesh", 11237432); 
+			}
+		} 
+
+		function callbackFunction(name, nationality, phone) { 
+			console.log("below the callback function output"); 
+			console.log("Name: " + name); 
+			console.log("Nationality: " + nationality);
+			console.log("Phone number: "+ phone);
+		} 
+
+		higherOrderFunction("THis is higherOrderFunction text", callbackFunction); 
+		
+	</script> 
+</body> 
+
+</html> 
